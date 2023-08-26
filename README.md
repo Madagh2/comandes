@@ -23,6 +23,10 @@ Gestió de comandes per a centres educatius.
 - Introduir els paràmetres corresponents a la base de dades: host, nom, usuari i contrasenya
 - L'aplicació es connecta per primera vegada a la base de dades i crea les primeres taules necessaries
 - Entrar a l'aplicació amb usuari **admin** i contrasenya **admin**. Per seguretat aquesta contrasenya s'ha de canviar
+- Configurar els paràmetres del centre al menú **Configuració**
+  - Oferta educativa
+  - Signatures. Escanejades en format PNG amb transparència
+  - Dades del centre
 - El curs acadèmic es calcula automàticament, prenent com a referència per al canvi de curs el mes d'agost. Comprovar que el curs és correcte
 - Entrar al menú **Base de dades** i generar les taules de comandes del curs actual
 - Opcionalment, es pot pujar al servidor el fitxer XML generat pel Gestib i importar el professorat i els departaments. En cas contrari, l'aplicació utilitza la taula usuaris
