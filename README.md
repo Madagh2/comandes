@@ -31,7 +31,7 @@ Gestió de comandes per a centres educatius.
 - Entrar al menú **Base de dades** i generar les taules de comandes del curs actual
 - Opcionalment, es pot pujar al servidor el fitxer XML generat pel Gestib i importar el professorat i els departaments. En cas contrari, l'aplicació utilitza la taula usuaris
 ## Recursos externs
-- [Materialize](https://materializecss.com/). Front-end framework responsivo basado en Material Dessign
+- [Materialize](https://materializecss.com/). Front-end framework responsiu basat en Material Dessign
 - [MyPHP-Backup](https://github.com/daniloaz/myphp-backup). Creació de còpies de seguretat de bases de dades per Daniel López
 ## Contacte
 Manuel Almonacid,
