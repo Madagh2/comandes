@@ -1,0 +1,176 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+tdhtml, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, head, input, textarea {
+  /*border: 1px dotted;*/
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  /* vertical-align: baseline; */
+}
+
+table {
+  empty-cells: show;
+  margin: auto;
+  padding: 3px;
+  border: 2px outset #666;
+}
+th {
+    text-align: left;
+    background: #bbb;;
+    color: #000;
+    font-weight: bolder;
+}
+
+.mostra {
+    background: #bbb;;
+    color: #000;
+    font-weight: bolder;
+    border: 2px outset #666;
+}
+.anchomin {
+  white-space: nowrap;
+  width: 1%;
+}
+.ancho {
+  width: 100%;
+}
+.ancho33 {
+  width: 33%;
+}
+.noborde {
+  border: 0px;
+}
+.red09 {
+  font-size: 0.9em;
+}
+.top {
+  vertical-align: top !important;
+}
+
+#completa {
+  width: 100%;
+}
+#completa th, #completa td {
+  border: 1px solid;
+  vertical-align: middle;
+}
+
+#incid table {
+  width: 100%;
+  font-size: 0.9em;
+  border: 0px;
+}
+#incid td {
+  border: 1px solid;
+  vertical-align: top;
+}
+#incid .nw {
+  white-space: nowrap;
+}
+#incid .Si {
+  background-color: #cfc;
+}
+#incid .No {
+  background-color: #faa;
+}
+#incid .CD{
+  background-color: #ffc;
+}
+.d {
+  text-align: right;
+}
+.c {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media screen {
+    #sgqprint {
+      display:none;
+    }
+    .ocultar {display:none}
+    .ocultom {width: 200px;}
+    #webborder{
+      min-width: 770px;
+      margin: 0pt;
+      position: relative;
+      overflow: visible;
+      display: table;
+    }
+}
+@media print {
+    html, body, section, table {
+        font-size: 10pt;
+        background-color: white;
+    }
+    .mostra {
+      background-color: #bbb;
+      border: 1px solid #000;
+    }
+    th, .gris {
+      background-color: #bbb;
+    }
+    #sgq {
+      display:none;
+    }
+    nav {
+      display:none;
+    }
+    #sgqprint {
+      width: 100%;
+      height: 1mm;
+      border: 0px;
+      border-bottom: 1px solid;
+      padding: 0px 0px 2px 0px;
+    }
+    #logoprint {
+      float: left;
+      width: 12.8mm;
+      /* height: 11mm; */
+      display: table-cell;
+      vertical-align: middle;
+    }
+    #titolprint {
+      float: right;
+      width: 80%;
+      /* height: 11mm; */
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding: 0px;
+      margin: 0px;
+    }
+    #titolprint table {
+      width: 100%;
+      /* height: 11mm; */
+      vertical-align: middle;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+    .oculto {display:none}
+    .ocultom {display:none}
+    .top {
+      vertical-align: top !important;
+    }
+    
+    #webborder{
+      width: 100%;
+      background-color: white;
+    }
+}

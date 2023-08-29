@@ -1,0 +1,43 @@
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+td, th {
+    padding: 2px 2px !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.red09 {
+    font-size: 90% !important;
+}
+.red08 {
+    font-size: 80% !important;
+}
+.red06 {
+    font-size: 60% !important;
+}
+.size2r {
+    height: 2rem !important;
+}
+.bbe {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+.nomargin {
+  margin: 0px !important; 
+}
+.c {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
