@@ -22,7 +22,7 @@ $sql.=" WHERE uid='$uid'";
 $result = mysqli_query($link,$sql);
 
 $com="Actualitzat usuari ".$user.", ".$nom;
-$sqlact = "INSERT INTO activitat (user, obs, data) VALUES ('".$profe."', '".$com."', NOW())";
+$sqlact = "INSERT INTO activitat (user, obs, data) VALUES ('".$_SESSION['profe']."', '".$com."', NOW())";
 $resultact = mysqli_query($link,$sqlact);
 
 $tornar = (isset($_POST['nivtxt'])) ? "menu.php" : ($autoritzat=="0" ? "usuaris.php" : "usuedit.php?uid=".$uid);
