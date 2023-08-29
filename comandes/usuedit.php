@@ -313,6 +313,9 @@ include ("editor.php");?>
 if (isset($_GET['cc'])) {
   echo '<script>alert("Canvia la teva contrasenya");</script>';
 }
+if ($uid == 0) {
+  echo '<script>alert("La contrasenya per defecte per a nous usuaris és \'comandes\' si no s\'especifica una altra. Es demanarà a l\'usuari que la canviï quan hi entri per primera vegada.");</script>';
+}
 include("footer.php");
 include("footerform.php");?>
 </body>
