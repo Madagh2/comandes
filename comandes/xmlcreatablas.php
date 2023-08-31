@@ -96,12 +96,12 @@ $n=1;?>
     </tr>
     <tr>
         <td><?php echo $n;$n++;?></td>
-        <td class="tooltipped" data-position="bottom" data-tooltip="Ajuda dels menús de la intranet">ajuda</td>
+        <td class="tooltipped" data-position="bottom" data-tooltip="Ajuda dels menús de la intranet"><a href="ajudalist.php">ajuda</a></td>
         <td><?php echo tabla_existe("ajuda",$link,$db);?></td>
     </tr>
     <tr>
         <td><?php echo $n;$n++;?></td>
-        <td class="tooltipped" data-position="bottom" data-tooltip="Còpies de seguretat de la base de dades">backup</td>
+        <td class="tooltipped" data-position="bottom" data-tooltip="Còpies de seguretat de la base de dades"><a href="copies.php">backup</a></td>
         <td><?php echo tabla_existe("backup",$link,$db);?></td>
     </tr>
     <tr>
