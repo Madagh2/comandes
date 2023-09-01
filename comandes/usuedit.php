@@ -136,14 +136,14 @@ include ("editor.php");?>
           <div class="input-field col s12">
             <?php 
             $nivopt = array();
-            $niv=["Administrador","Equip Directiu","Cap de Departament","Professorat","No docent","Altres"];
+            $niv=[0 => "Administrador",1 => "Equip Directiu",2 => "Cap de Departament",3 => "Professorat",4 => "No docent",5 => "Altres"];
             if ($pers==0) {
               $opt="";
-              foreach($niv as $valor) {
-                $opt ='<option value="'.$i.'"';
-                $opt.=($i==$nivell ? ' selected=""' : '');
+              foreach($niv as $key=>$valor) {
+                $opt ='<option value="'.$key.'"';
+                $opt.=($key==$nivell ? ' selected=""' : '');
                 $opt.=($_SESSION['nivell']=="0" ? '' : 'disabled');
-                $opt.='>'.$i." - ".$niv[$i].'</option>';
+                $opt.='>'.$key." - ".$valor.'</option>';
                 $nivopt[] = $opt;
               }
               $nivopt = join("\n", $nivopt);
@@ -222,13 +222,13 @@ include ("editor.php");?>
             <label for="altacentre">Alta al centre</label>
           </div>
           <div class="input-field col s12 m6">
-            <span>Autoritzat&nbsp;</span>
+            <span>Autoritzat:&nbsp;</span>
             <?php $opt=[1 => "Sí", 2 => "Especial", 0 => "No"];
             foreach($opt as $key=>$value) {?>
               <span>
                 <label>
                   <input class="with-gap" name="autoritzat" type="radio" <?php echo 'value="'.$key.'" '.($aut==$key ? ' checked="checked"' : '');?>>
-                  <span><?php echo $value;?></span>
+                  <span><?php echo $value;?>&nbsp;&nbsp;</span>
                 </label>
               </span>
             <?php }?>

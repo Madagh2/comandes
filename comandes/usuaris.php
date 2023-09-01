@@ -68,12 +68,13 @@ if (permis("usuaris")!=1 AND $_SESSION['nivell']!=0) {header ("Location: menu.ph
           <?php echo "<!-- ",$niv," -->";?>      
           <select id="niv" name="niv" onchange="this.form.submit();">
             <option value="t" <?php echo ($niv=="t" ? ' selected=""' : '');?>>Tots</option>
-            <?php $nivell=["Administrador","Equip Directiu","Cap de Departament","Professorat","No docent","Altres"];
+            <?php 
+            $nivell = [0 => "Administrador",1 => "Equip Directiu",2 => "Cap de Departament",3 => "Professorat",4 => "No docent",5 => "Altres"];
               if ($_SESSION['nivell']=="0") {$imin="0";} else {$imin="1";}
-              for ($i=$imin; $i<=7; $i++)  {
-                  echo '<option value="',$i,'"';
-                  echo ($i==$niv ? ' selected=""' : '');
-                  echo '>',$i,". ",$nivell[$i],'</option>';
+              foreach($nivell as $key=>$valor) {
+                  echo '<option value="',$key,'"';
+                  echo ($key==$niv ? ' selected=""' : '');
+                  echo '>',$key,". ",$valor,'</option>';
                   echo "\n";
               }?>
           </select>
